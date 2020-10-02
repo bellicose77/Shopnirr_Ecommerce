@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'App_Login',
     'App_Shop',
-    'App_Order'
+    'App_Order',
+    'crispy_forms',
+
 
 ]
 AUTH_USER_MODEL= 'App_Login.User'
