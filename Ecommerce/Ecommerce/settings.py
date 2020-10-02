@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
 
 ]
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 AUTH_USER_MODEL= 'App_Login.User'
 
 MIDDLEWARE = [
