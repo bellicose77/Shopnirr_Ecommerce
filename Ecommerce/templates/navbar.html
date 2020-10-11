@@ -8,8 +8,11 @@
       <ul class="navbar-nav ml-auto">
         {% if request.user.is_authenticated %}
         <li class="nav-item">
+         <a href="{% url 'App_Order:cart' %}">
+           <i class="fa fa-shopping-cart"></i> Cart
+        
+         </a>
 
-              <i class="fa fa-shopping-cart"></i> Cart
 
 
         </li>
@@ -17,7 +20,8 @@
 
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie"></i> {{request.user.profile.username}}</a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie">
+          </i> {{request.user.profile.username}}</a>
           <div class="dropdown-menu" aria-labelledby="nabbarDropdown">
             <a class="dropdown-item" href="{% url 'App_Login:profile' %}">Profile</a>
               <a class="dropdown-item" href="#">Orders</a>
